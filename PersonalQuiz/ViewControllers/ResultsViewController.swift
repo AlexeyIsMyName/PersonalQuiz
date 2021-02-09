@@ -11,14 +11,14 @@ class ResultsViewController: UIViewController {
 
     @IBOutlet var mainResultLabel: UILabel!
     @IBOutlet var definitionResultLabel: UILabel!
-    @IBOutlet var backTabBarNavItem: UINavigationItem!
+    @IBOutlet var tabBarNavItem: UINavigationItem!
     
     var answersChoosen: [Answer]!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        backTabBarNavItem.hidesBackButton.toggle()
+        tabBarNavItem.hidesBackButton = true
         showResult()
     }
     
